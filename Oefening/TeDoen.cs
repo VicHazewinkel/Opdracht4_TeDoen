@@ -25,7 +25,7 @@ namespace Oefening
 
         public string ToString()
         {
-            return (id + ", " + Titel + " " + String.Join(", ", Informatie) + " " + tijdStip == null? " dringend ": " niet dringend "; 
+            return (id + ", " + Titel + " " + String.Join(", ", Informatie) + " " + tijdStip == null? " dringend ": " niet dringend "); 
         }
 
     }

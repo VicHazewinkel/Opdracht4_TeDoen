@@ -1,6 +1,6 @@
 ﻿namespace Oefening
 {
-    partial class Form
+    partial class TakenBeheer
     {
         /// <summary>
         ///  Required designer variable.
