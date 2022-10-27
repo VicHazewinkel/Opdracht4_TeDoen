@@ -70,9 +70,11 @@ namespace Oefening
             return huidige;
         }
 
-        public string ToString()
+        public override string ToString()
         {
-            return String.Join("\n", rij.ToArray());
+            return String.Join("\n", rij.ConvertAll(E=>E.ToString()).ToArray());
+
+            
         }
 
         public bool IsLeeg()

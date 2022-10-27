@@ -43,6 +43,8 @@
             this.button_Save = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label_TasksOutput = new System.Windows.Forms.Label();
+            this.label_huidigeTast = new System.Windows.Forms.Label();
+            this.label_curentTaskOutput = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button_Delete
@@ -155,11 +157,31 @@
             this.label_TasksOutput.TabIndex = 13;
             this.label_TasksOutput.Text = ". . . . .";
             // 
+            // label_huidigeTast
+            // 
+            this.label_huidigeTast.AutoSize = true;
+            this.label_huidigeTast.Location = new System.Drawing.Point(381, 155);
+            this.label_huidigeTast.Name = "label_huidigeTast";
+            this.label_huidigeTast.Size = new System.Drawing.Size(68, 15);
+            this.label_huidigeTast.TabIndex = 14;
+            this.label_huidigeTast.Text = "Curent Task";
+            // 
+            // label_curentTaskOutput
+            // 
+            this.label_curentTaskOutput.AutoSize = true;
+            this.label_curentTaskOutput.Location = new System.Drawing.Point(381, 181);
+            this.label_curentTaskOutput.Name = "label_curentTaskOutput";
+            this.label_curentTaskOutput.Size = new System.Drawing.Size(34, 15);
+            this.label_curentTaskOutput.TabIndex = 15;
+            this.label_curentTaskOutput.Text = ". . . . .";
+            // 
             // TakenBeheer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label_curentTaskOutput);
+            this.Controls.Add(this.label_huidigeTast);
             this.Controls.Add(this.label_TasksOutput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button_Save);
@@ -193,5 +215,7 @@
         private Button button_Save;
         private Label label1;
         private Label label_TasksOutput;
+        private Label label_huidigeTast;
+        private Label label_curentTaskOutput;
     }
 }

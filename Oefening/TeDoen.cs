@@ -14,19 +14,27 @@ namespace Oefening
         private string[] Informatie;
         private string Titel;
 
-        public TeDoen(string titel, string[] Informatie, DateTime tijdStip)
+        public TeDoen(string titel, string[] Informatie)
         {
             this.Titel = titel;
             this.Informatie = Informatie;   
-            this.tijdStip = tijdStip;
+            this.tijdStip = default;
             count++; 
             id = count;
         }
 
-        public string ToString()
+        public TeDoen(string titel, string[] Informatie, DateTime tijdStip)
         {
-            return (id + ", " + Titel + " " + String.Join(", ", Informatie) + " " + tijdStip == null? " dringend ": " niet dringend "); 
+            this.Titel = titel;
+            this.Informatie = Informatie;
+            this.tijdStip = tijdStip;
+            count++;
+            id = count;
         }
 
+        public override string ToString()
+        {
+            return (id + ", " + Titel + " " + String.Join(", ", Informatie) + " " + (tijdStip == null? " dringend ": " niet dringend ")); 
+        }
     }
 }
